@@ -1,9 +1,9 @@
 pipeline {
   agent any
-  stages {
-   stage { 'Build' } {
-    steps {
-     sh 'printenv'
+   stages {
+    stage {'Build'} {
+     steps {
+      sh 'printenv'
          }
     }
     stage { 'Publish ECR' } {
