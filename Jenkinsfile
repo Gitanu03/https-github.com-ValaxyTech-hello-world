@@ -1,11 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage {'Build'} {
-      steps {
-        sh 'printenv'
-        
-        }
+   stage {'Build'} {
+    steps {
+     sh 'printenv'
+         }
       }
       stage {'Publish ECR'} {
         steps {
